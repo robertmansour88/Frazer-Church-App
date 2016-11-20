@@ -6,7 +6,7 @@ debugger;
 //alert("Welcome to My Javascript file")
 var xhr = new XMLHttpRequest();
 xhr.open('GET', '/api/products');
-xhr.send('/api/products');
+xhr.send(null);
 //currentLocation = window.location.href;
 //window.alert(currentLocation);
 //console.log(currentLocation);
