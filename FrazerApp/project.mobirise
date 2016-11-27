@@ -21,16 +21,16 @@
       }
     },
     "versionFirst": "3.8.5",
-    "uniqCompNum": 5,
+    "uniqCompNum": 57,
     "versionPublish": "3.8.5",
     "publishType": "local",
-    "publishPath": "file:///C:/Users/Arabi%20Meeting/Desktop/St.%20Mary%20&amp;%20St.%20Pope%20Kyrillos%20VI"
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
-        "title": "",
+        "title": "Home",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
@@ -38,71 +38,92 @@
       },
       "components": [
         {
-          "_name": "header1",
-          "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "slider",
           "_styles": {
-            ".mbr-section-title SPAN": {
-              "font-size": "32px"
+            "H2": {
+              "font-size": "48px",
+              "color": "#f3c649"
             }
           },
-          "_anchor": "header1-1",
           "_params": {
-            "parallax": true,
-            "bgImageRadio": true,
-            "showArrow": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#a07e49",
-            "bgColorRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
-            },
-            "bgVideoRadio": false,
-            "overlay": false,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#000",
-            "contentAlign": "center",
-            "showTitle": true,
-            "showText": true,
-            "showButtons": true
+            "autoplay": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "timeout": 5,
+            "slides": [
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/churchimg-2000x1237-54.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "overlay": true,
+                "overlayOpacity": "0.2",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "St. Mary &amp; Pope Kyrillos VI<div>Coptic Orthodox Church</div>",
+                "showText": true,
+                "text": "Fraser, MI\u001b",
+                "showButtons": true,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Liturgy Schedule</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"#bottom\" data-toolbar=\"-mbrBtnMove\">Location</a> "
+              },
+              {
+                "active": true,
+                "image": "@PROJECT_PATH@/assets/images/churh-2000x1500-3.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "overlay": true,
+                "overlayOpacity": "0.2",
+                "overlayColor": "#000000",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "St. Mary &amp; Pope Kyrillos VI<div>Coptic Orthodox Church</div>",
+                "showText": true,
+                "text": "Fraser, MI",
+                "showButtons": true,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Liturgy Schedule</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"#bottom\" data-toolbar=\"-mbrBtnMove\">Location</a> "
+              }
+            ],
+            "fullScreen": true,
+            "bgColor": "#fff",
+            "showBullets": true
           },
-          "title": "St. Mary &amp; Pope Kyrillos VI<br><span style=\"font-weight: normal;\">Coptic Orthodox Church</span><br><span style=\"font-weight: normal;\">Fraser, MI\u001b</span>",
-          "text": "",
-          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Liturgy Schedule</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"index.html#map2-0\" data-toolbar=\"-mbrBtnMove\">Location</a> "
+          "_anchor": "slider-h",
+          "articleLayout": false
         },
         {
           "_tags": [
             "Theme"
           ],
-          "_name": "map2",
-          "_anchor": "map2-0",
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-n",
           "_params": {
-            "paddingTop": 4,
-            "paddingBottom": 4,
-            "bgColor": "#fff",
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
             "googleMap": {
-              "address": "31741 cyril dr fraser",
+              "address": "31741 Cyril Ave",
               "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
               "state": "ok",
               "stateDetails": ""
             }
-          }
-        },
-        {
-          "_name": "footer1",
-          "_anchor": "footer1-2",
-          "_params": {
-            "paddingTop": 2,
-            "paddingBottom": 2,
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#323232",
-            "bgColorRadio": true,
-            "overlay": true,
-            "overlayOpacity": 0.8,
-            "overlayColor": "#444444"
           },
-          "text": "Copyright (c) 2016 Mobirise."
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
         },
         {
           "_styles": {
@@ -110,16 +131,17 @@
               "display": "none !important"
             },
             ".navbar-caption": {
-              "color": "#ffffff"
+              "color": "#ffffff",
+              "font-size": "14px"
             },
             ".navbar-toggler": {
-              "color": "#ffffff"
+              "color": "#000000"
             },
             ".close-icon::before, .close-icon::after": {
-              "background-color": "#ffffff"
+              "background-color": "#000000"
             },
             ".link, .dropdown-item": {
-              "color": "#ffffff"
+              "color": "#000000"
             },
             ".link": {
               "font-size": "0.75rem"
@@ -131,16 +153,16 @@
               "color": "@primaryColor"
             },
             ".link[aria-expanded=\"true\"], .dropdown-menu": {
-              "background": "#0e0e0e"
+              "background": "#e6e6e6"
             },
             ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
-              "background": "#202020!important"
+              "background": "#f7f7f7!important"
             },
             ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
-              "background": "#282828"
+              "background": "#ffffff"
             },
             ".bg-color.transparent .link": {
-              "color": "#ffffff",
+              "color": "#000000",
               "transition": "none"
             },
             ".bg-color.transparent.opened .link": {
@@ -159,12 +181,12 @@
           "_name": "menu",
           "_anchor": "menu-1",
           "_params": {
-            "bgColor": "#282828",
+            "bgColor": "#ffffff",
             "fontSize": 0.75,
             "fontName": {},
-            "fontColor": "#ffffff",
+            "fontColor": "#000000",
             "fontHoverColor": "@primaryColor",
-            "transparent": true,
+            "transparent": false,
             "sticky": true,
             "logo": true,
             "showBrand": true,
@@ -187,19 +209,594 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption text-white\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
-          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Contact Us</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Facebook</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Twitter</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Donate</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         }
       ]
     },
     "Clergy.html": {
       "settings": {
-        "title": ""
+        "title": "Our Clergy"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-a",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "testimonials1",
+          "_styles": {
+            ".card-footer > div": {
+              "color": "#f3c649"
+            },
+            ".mbr-section-title": {
+              "color": "#c0a375"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#c0a375"
+            },
+            ".card-block P": {
+              "color": "#b8312f"
+            }
+          },
+          "testimonial": [
+            {
+              "text": "<p>Fr. Mina Essak, previously Mr. Kamal Essak, is a graduate of Assuit Univeristy. He graduated from the College of Engineering in 1967 with a BA in Mechanical Engineering. Kamal worked as a designer and then as a mechanical engineer with a variety of consulting firms. He joined the US federal government in 1985 working for the small business administration and then for the US Army until October of 1991. In November 1991, Kamal was ordained as Fr. Mina to serve the congregation of St. Mark Coptic Orthodox Church in Troy, MI. He was elevated to the rank of Archpriest in 1999. May the Lord continue his service.</p>",
+              "media": {
+                "image": {
+                  "src": "@PROJECT_PATH@/assets/images/frminaessak-109x160-46.jpg",
+                  "class": "img-circle",
+                  "height": 160,
+                  "width": 160,
+                  "active": true,
+                  "link": "Clergy.html",
+                  "alt": "",
+                  "title": "Fr. Mina Essak",
+                  "linkInNewWindow": false
+                }
+              },
+              "authorName": "Very Reverend Fr. Mina Essak",
+              "authorBio": ""
+            },
+            {
+              "text": "<p>Fr. Maximus Habib, formerly Mr. Magdy Habib, is a graduate of Ain Shams University in Cairo, Egypt. He holds a BA in Civil Engineering which he earned in 1982. Magdy graduated from Wayne State University in 1995 with a MS in Civil Engineering. He worked as a Project Engineer with Smith Group in Detroit, MI until 2001. In July 2001, Magdy was ordained as Fr. Maximus to serve the congregation of St. Mark Coptic Orthodox Church in Troy, MI. May the Lord continue his service.</p>",
+              "media": {
+                "image": {
+                  "src": "@PROJECT_PATH@/assets/images/frmaximushabib-116x160-12.jpg",
+                  "class": "img-circle",
+                  "height": 160,
+                  "width": 160,
+                  "active": true,
+                  "link": "",
+                  "alt": "",
+                  "title": "",
+                  "linkInNewWindow": false
+                }
+              },
+              "authorName": "Reverend Fr. Maximus Habib",
+              "authorBio": ""
+            },
+            {
+              "text": "<p>Fr. Mark Ibrahim, previously Mr. Sherif Ibrahim graduated from Wayne State University in 1998 with a BS in Electrical and Computer Engineering. He graduated from Wayne State again in 2004 with a MS in Computer Engineering and earned his MBA from Walsh College in 2008. Sherif worked as a Network Security Consultant in various fortune 500 firms until 2012. In July 2012, Sherif was ordained as Fr. Mark to serve the congregation of St. Mark Coptic Orthodox Church in Troy, MI. Mat the Lord continue his service.</p>",
+              "media": {
+                "image": {
+                  "src": "@PROJECT_PATH@/assets/images/frmarkibrahim-106x160-35.jpg",
+                  "class": "img-circle",
+                  "height": 160,
+                  "width": 160,
+                  "active": true,
+                  "link": "",
+                  "alt": "",
+                  "title": "",
+                  "linkInNewWindow": false
+                }
+              },
+              "authorName": "Reverend Fr. Mark Ibrahim",
+              "authorBio": ""
+            }
+          ],
+          "_anchor": "testimonials1-4",
+          "_params": {
+            "paddingTop": "3",
+            "paddingBottom": 3,
+            "count": 3,
+            "showImages": true,
+            "showName": true,
+            "showBio": true,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/landscape2.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showSubtitle": true
+          },
+          "title": "Our Clergy",
+          "subtitle": "\"I will instruct you and teach you in the way you should go; I will counsel you with my eye upon you.\" Psalm 32:8"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-n",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        }
+      ]
+    },
+    "Board.html": {
+      "settings": {
+        "title": "Our Board"
+      },
+      "components": [
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-n",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-j",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_inherit": "msg-box8",
+          "_styles": {
+            ".mbr-section-title, p": {
+              "color": "#000"
+            },
+            ".lead P": {
+              "color": "#b8312f",
+              "text-align": "center",
+              "font-family": "'Oswald', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
+            },
+            ".lead UL": {
+              "color": "#f3c649",
+              "text-align": "left"
+            },
+            ".lead LI": {
+              "text-align": "right"
+            },
+            ".mbr-section-title": {
+              "color": "#0b4c6e",
+              "font-family": "'PT Sans', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=PT+Sans:400,700"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box3",
+          "_anchor": "msg-box3-8",
+          "_params": {
+            "paddingTop": "3",
+            "paddingBottom": "3",
+            "parallax": true,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/desert.jpg",
+            "bgColor": "#F2F2F2",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": true,
+            "showButton": true
+          },
+          "title": "Board Meeting Minutes",
+          "text": "<p>Year 2016 Meetings</p><p>January 10, 2016</p>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">SEE ALL TEMPLATES</a>"
+        }
+      ]
+    },
+    "ContactUs.html": {
+      "settings": {
+        "title": "Contact Us"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-a",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_inherit": "msg-box8",
+          "_styles": {
+            ".mbr-section-title, p": {
+              "color": "#000"
+            },
+            ".mbr-section-title": {
+              "color": "#b8312f",
+              "font-family": "'Indie Flower', cursive",
+              "googleLink": "https://fonts.googleapis.com/css?family=Indie+Flower",
+              "font-size": "60px"
+            },
+            ".lead P": {
+              "color": "#b8312f",
+              "font-family": "'Indie Flower', cursive",
+              "googleLink": "https://fonts.googleapis.com/css?family=Indie+Flower",
+              "font-size": "30px"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box3",
+          "_anchor": "msg-box3-f",
+          "_params": {
+            "paddingTop": "3",
+            "paddingBottom": "3",
+            "parallax": true,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/desert.jpg",
+            "bgColor": "#a1ba88",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": true,
+            "showButton": true
+          },
+          "title": "Contact Us",
+          "text": "<p>St. Mary &amp; Pope Kyrillos VI</p><p>31741 Cyril Ave.</p><p>Fraser, MI</p><p><br></p>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">SEE ALL TEMPLATES</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-n",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        }
+      ]
+    },
+    "Liturgies.html": {
+      "settings": {
+        "title": "Liturgy Schedule"
       },
       "components": [
         {
           "_name": "footer1",
-          "_anchor": "footer1-2",
+          "_anchor": "footer1-i",
           "_params": {
             "paddingTop": 2,
             "paddingBottom": 2,
@@ -220,16 +817,17 @@
               "display": "none !important"
             },
             ".navbar-caption": {
-              "color": "#ffffff"
+              "color": "#ffffff",
+              "font-size": "14px"
             },
             ".navbar-toggler": {
-              "color": "#ffffff"
+              "color": "#000000"
             },
             ".close-icon::before, .close-icon::after": {
-              "background-color": "#ffffff"
+              "background-color": "#000000"
             },
             ".link, .dropdown-item": {
-              "color": "#ffffff"
+              "color": "#000000"
             },
             ".link": {
               "font-size": "0.75rem"
@@ -241,16 +839,16 @@
               "color": "@primaryColor"
             },
             ".link[aria-expanded=\"true\"], .dropdown-menu": {
-              "background": "#0e0e0e"
+              "background": "#e6e6e6"
             },
             ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
-              "background": "#202020!important"
+              "background": "#f7f7f7!important"
             },
             ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
-              "background": "#282828"
+              "background": "#ffffff"
             },
             ".bg-color.transparent .link": {
-              "color": "#ffffff",
+              "color": "#000000",
               "transition": "none"
             },
             ".bg-color.transparent.opened .link": {
@@ -267,14 +865,14 @@
             "Theme"
           ],
           "_name": "menu",
-          "_anchor": "menu-3",
+          "_anchor": "menu-j",
           "_params": {
-            "bgColor": "#282828",
+            "bgColor": "#ffffff",
             "fontSize": 0.75,
             "fontName": {},
-            "fontColor": "#ffffff",
+            "fontColor": "#000000",
             "fontHoverColor": "@primaryColor",
-            "transparent": true,
+            "transparent": false,
             "sticky": true,
             "logo": true,
             "showBrand": true,
@@ -284,7 +882,7 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "@PROJECT_PATH@/assets/images/image-1-178x128-133.jpg",
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
               "height": 128,
               "alt": "",
               "link": "www.google.com",
@@ -297,79 +895,1649 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption text-white\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
-          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Contact Us</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Facebook</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Twitter</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Donate</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-k",
+          "_params": {
+            "paddingTop": "7",
+            "paddingBottom": 1,
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "2016 Liturgy Schedule",
+          "meta": "Updated on November 26, 2016"
         },
         {
           "_tags": [
             "Theme"
           ],
-          "_name": "testimonials1",
-          "testimonial": [
-            {
-              "text": "<p>“its really very amazing app that makes me finish html page in 3 minutes ( that's usually takes more than 1 hours at least from me if i did it from scratch). i hope to have very big library and plugins for this APP thanks again for your nice application”</p>",
-              "media": {
-                "image": {
-                  "src": "@THEME_PATH@/components/_images/face3.jpg",
-                  "class": "img-circle",
-                  "height": 160,
-                  "width": 160,
-                  "active": true
-                }
-              },
-              "authorName": "Abanoub S.",
-              "authorBio": "User"
+          "_name": "content1",
+          "_anchor": "content1-l",
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "0",
+            "bgColor": "#fff"
+          },
+          "text": "<p>The Liturgy service is held once a month at <a href=\"index.html\">31741 Cyril Ave</a>. Food is served after the liturgy.</p>"
+        }
+      ]
+    },
+    "ConfessionAppointment.html": {
+      "settings": {
+        "title": "Book a Confession Appointment"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-section-title, p": {
+              "color": "#fff"
             },
-            {
-              "text": "<p>“First of all hands off to you guys for your effort and nice, super tool. Good work mobirise team. We are expecting the new version soon with advance functionality with full bootstrap design. Great effort and super UI experience with easy drag & drop with no time design bootstrap builder in present web design world.”</p>",
-              "media": {
-                "image": {
-                  "src": "@THEME_PATH@/components/_images/face1.jpg",
-                  "class": "img-circle",
-                  "height": 160,
-                  "width": 160,
-                  "active": true
-                }
-              },
-              "authorName": "Suffian A.",
-              "authorBio": "User"
-            },
-            {
-              "text": "<p>“At first view, looks like a nice innovative tool, i like the great focus and time that was given to the responsive design, i also like the simple and clear drag and drop features. Give me more control over the object's properties and ill be using this tool for more serious projects. Regards.”</p>",
-              "media": {
-                "image": {
-                  "src": "@THEME_PATH@/components/_images/face2.jpg",
-                  "class": "img-circle",
-                  "height": 160,
-                  "width": 160,
-                  "active": true
-                }
-              },
-              "authorName": "Jhollman C.",
-              "authorBio": "User"
+            ".mbr-section-title": {
+              "color": "#000000"
             }
+          },
+          "_tags": [
+            "Theme"
           ],
-          "_anchor": "testimonials1-4",
+          "_name": "msg-box8",
+          "_anchor": "msg-box8-r",
+          "_params": {
+            "paddingTop": "5",
+            "paddingBottom": "0",
+            "parallax": true,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/desert.jpg",
+            "bgColor": "#ffffff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": false,
+            "showButton": false
+          },
+          "title": "Book a Confession Appointment",
+          "text": "",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-s",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "Under construction. Please book a confession appointment at <a href=\"http://www.stmarkmi.org/index.php/connect/confession\">St. Mark</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-o",
           "_params": {
             "paddingTop": 3,
             "paddingBottom": 3,
-            "count": 3,
-            "showImages": true,
-            "showName": true,
-            "showBio": true,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-p",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "ContactFrMina.html": {
+      "settings": {
+        "title": "Contact Father Mina"
+      },
+      "components": [
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "form1",
+          "_anchor": "form1-v",
+          "_params": {
+            "labelsColor": "#232323",
+            "paddingTop": 3,
+            "paddingBottom": 3,
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/landscape2.jpg",
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
             "bgColor": "#fff",
             "bgColorRadio": true,
             "overlay": false,
             "overlayOpacity": 0.5,
             "overlayColor": "#222",
             "showTitle": true,
-            "showSubtitle": true
+            "showSubTitle": true
           },
-          "title": "WHAT OUR FANTASTIC USERS SAY",
-          "subtitle": "Shape your future web project with sharp design and refine coded functions."
+          "title": "Contact Form&nbsp;",
+          "subtitle": "Fr. Mina Essak",
+          "form": {
+            "action": "rouby_dragdrop@hotmail.com",
+            "alerts": {
+              "success": "Thanks for filling out form!"
+            },
+            "fields": {
+              "name": {
+                "title": "Name",
+                "visible": true,
+                "customTitle": "Name*"
+              },
+              "email": {
+                "title": "Email",
+                "visible": true,
+                "customTitle": "Email*"
+              },
+              "phone": {
+                "title": "Phone",
+                "visible": true,
+                "customTitle": "Phone"
+              },
+              "message": {
+                "title": "Message",
+                "customTitle": "Message"
+              }
+            }
+          },
+          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-success\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">Send E-mail</a>",
+          "_styles": {
+            ".form-control-label": {
+              "color": "#232323"
+            }
+          }
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-t",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-u",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "ContactFrMax.html": {
+      "settings": {
+        "title": "Contact Father Maximus"
+      },
+      "components": [
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "form1",
+          "_anchor": "form1-y",
+          "_params": {
+            "labelsColor": "#232323",
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showSubTitle": true
+          },
+          "title": "Contact Form",
+          "subtitle": "Fr. Maximus Habib",
+          "form": {
+            "action": "rouby_dragdrop@hotmail.com",
+            "alerts": {
+              "success": "Thanks for filling out form!"
+            },
+            "fields": {
+              "name": {
+                "title": "Name",
+                "visible": true,
+                "customTitle": "Name*"
+              },
+              "email": {
+                "title": "Email",
+                "visible": true,
+                "customTitle": "Email*"
+              },
+              "phone": {
+                "title": "Phone",
+                "visible": true,
+                "customTitle": "Phone"
+              },
+              "message": {
+                "title": "Message",
+                "customTitle": "Message"
+              }
+            }
+          },
+          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-success\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">Send E-mail</a>",
+          "_styles": {
+            ".form-control-label": {
+              "color": "#232323"
+            }
+          }
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-w",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-x",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "ContactFrMark.html": {
+      "settings": {
+        "title": "Contact Father Mark"
+      },
+      "components": [
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "form1",
+          "_anchor": "form1-11",
+          "_params": {
+            "labelsColor": "#232323",
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showSubTitle": true
+          },
+          "title": "Contact Form",
+          "subtitle": "Fr. Mark Ibrahim",
+          "form": {
+            "action": "rouby_dragdrop@hotmail.com",
+            "alerts": {
+              "success": "Thanks for filling out form!"
+            },
+            "fields": {
+              "name": {
+                "title": "Name",
+                "visible": true,
+                "customTitle": "Name*"
+              },
+              "email": {
+                "title": "Email",
+                "visible": true,
+                "customTitle": "Email*"
+              },
+              "phone": {
+                "title": "Phone",
+                "visible": true,
+                "customTitle": "Phone"
+              },
+              "message": {
+                "title": "Message",
+                "customTitle": "Message"
+              }
+            }
+          },
+          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-success\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">Send E-mail</a>",
+          "_styles": {
+            ".form-control-label": {
+              "color": "#232323"
+            }
+          }
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-z",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-10",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "ScheduleHomeVisit.html": {
+      "settings": {
+        "title": "Schedule Home Visit"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-14",
+          "_params": {
+            "paddingTop": "6",
+            "paddingBottom": "2",
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Request A Visit From One Of The Church Fathers",
+          "meta": "Under Construction"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-12",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-13",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "Donate.html": {
+      "settings": {
+        "title": "Donate"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-17",
+          "_params": {
+            "paddingTop": "5",
+            "paddingBottom": "2",
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Donate",
+          "meta": "Under Construction"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-15",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-16",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "SundaySchool.html": {
+      "settings": {
+        "title": "Sunday School"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-1a",
+          "_params": {
+            "paddingTop": "5",
+            "paddingBottom": "2",
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Sunday School",
+          "meta": "Please help us start our Sunday School efforts !"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-18",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-19",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "Deacons.html": {
+      "settings": {
+        "title": "Deacons"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-1d",
+          "_params": {
+            "paddingTop": "5",
+            "paddingBottom": "1",
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Deacons Schedule",
+          "meta": "Click to download schedule as PDF"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-1b",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-1c",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "SocialCalendar.html": {
+      "settings": {
+        "title": "Social Calendar"
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-1h",
+          "_params": {
+            "paddingTop": "5",
+            "paddingBottom": 1,
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Social Calendar",
+          "meta": "Under Construction"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-1e",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-1f",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        }
+      ]
+    },
+    "LiveStreaming.html": {
+      "settings": {
+        "title": "Live Streaming"
+      },
+      "components": [
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "video2",
+          "_anchor": "video2-1k",
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "bgColor": "#fff",
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "src": "@THEME_PATH@/components/_images/image1.jpg",
+              "width": 1400
+            },
+            "video": {
+              "active": true,
+              "class": "mbr-embedded-video",
+              "src": "https://www.youtube.com/channel/UC1YWnqrrY6L5G6nnIHTZmhA/live",
+              "autoplay": "on",
+              "loop": false
+            }
+          },
+          "text": "St. Mary &amp; Pope Kyrillos VI Church Live Streaming"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts2",
+          "_styles": {
+            "STRONG": {
+              "color": "#f3c649"
+            }
+          },
+          "_anchor": "contacts2-1i",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#7c706b",
+            "googleMap": {
+              "address": "31741 Cyril Ave",
+              "placeId": "ChIJlYtJBqrZJIgRIzUUye0OynY",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          },
+          "text1": "<strong>Address</strong><br>31741 Cyril Ave, Fraser MI 46026<br><br><br>\n<strong>Contacts</strong><br>Contact Name: Tawfek Attea<br>Email: tawfekattea@hotmail.com<br>\nPhone: +1 (586) 489 6362<br>",
+          "text2": "<strong>Links</strong><ul><li><a class=\"text-white\" href=\"ContactUs.html\">Contact Us</a></li><li><a class=\"text-white\" href=\"Liturgies.html\">Liturgy Schedule</a></li><li><a class=\"text-white\" href=\"ConfessionAppointment.html\">Book a confession appointment</a></li></ul>"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff",
+              "font-size": "14px"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-1j",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/image-178x128-34.jpg",
+              "height": 128,
+              "alt": "",
+              "link": "www.google.com",
+              "title": "St. Mary & Pope Kyrillos VI",
+              "linkInNewWindow": true
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption text-warning\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">St. Mary &amp; Pope Kyrillos VI<br>Coptic Orthodox Church<br></a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Home</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">About us</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Clergy.html\">Our Clergy</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Board.html\">Our Board</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"https://mobirise.com/\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Connect</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" href=\"#\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Contact Us</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMina.html\">Fr. Mina Essak</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Fr. Maximus Habib<br></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ContactFrMark.html\">Fr. Mark Ibrahim<br></a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ConfessionAppointment.html\">Book a Confession Appointment</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"ScheduleHomeVisit.html\">Schedule a Home Visit with a Priest</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://www.facebook.com/groups/1641405476149962/\" target=\"_blank\">Facebook Group</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Donate.html\">Donate</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Services</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SundaySchool.html\">Sunday School</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"Deacons.html\">Deacons</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Liturgies</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"SocialCalendar.html\">Social Calendar</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"LiveStreaming.html\" aria-expanded=\"false\">Live Streaming</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         }
       ]
     }
