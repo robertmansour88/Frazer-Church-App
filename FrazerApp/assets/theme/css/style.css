@@ -1456,7 +1456,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     .mbr-testimonial .card-block:after {
       background-color: inherit;
       bottom: -7px;
-      content: "";
       display: block;
       height: 14px;
       left: 50%;
