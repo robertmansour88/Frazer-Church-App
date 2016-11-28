@@ -475,7 +475,7 @@
 
     //Fix menu for All Mobile phones
     if($.isMobile()){
-        $('.hamburger-icon').css({'width':'30px', 'height':'3px', 'background-color':'#ffffff', 'box-shadow':'none', 'position':'relative'}).addClass('hamburger-om');
+        $('.hamburger-icon').css({'width':'30px', 'height':'3px', 'background-color':'#ffffff', 'color':'#000000', 'box-shadow':'none', 'position':'relative'}).addClass('hamburger-om');
     }
 
 })(jQuery);

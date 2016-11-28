@@ -744,7 +744,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   .mbr-section-hero.mbr-section-with-arrow .mbr-section {
     padding-bottom: 120px; }
   .mbr-section-hero .mbr-section-title {
-    font-size: 3.125rem !important; }
+    font-size: 2.125rem !important; }
   .mbr-section-hero .mbr-section-lead {
     font-size: 1.125rem !important; }
   .mbr-section-hero .mbr-section-btn .btn {
@@ -1456,7 +1456,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     .mbr-testimonial .card-block:after {
       background-color: inherit;
       bottom: -7px;
-      content: "";
       display: block;
       height: 14px;
       left: 50%;

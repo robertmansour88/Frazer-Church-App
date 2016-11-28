@@ -109,6 +109,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Arabic Meeting Schedule.html" />
     <Content Include="assets\animate.css\animate.min.css" />
     <Content Include="assets\bootstrap-material-design-font\css\material.css" />
     <Content Include="assets\bootstrap-material-design-font\fonts\LICENSE.txt" />
@@ -119,9 +120,25 @@
     <Content Include="assets\dropdown\js\script.min.js" />
     <Content Include="assets\et-line-font-plugin\fonts\et-line.svg" />
     <Content Include="assets\et-line-font-plugin\style.css" />
+    <Content Include="assets\images\churchimg-2000x1237-12.jpg" />
+    <Content Include="assets\images\churchimg-2000x1237-54.jpg" />
+    <Content Include="assets\images\churchimg.jpg" />
+    <Content Include="assets\images\churh-2000x1500-3.jpg" />
+    <Content Include="assets\images\churh.jpg" />
     <Content Include="assets\images\face1.jpg" />
     <Content Include="assets\images\face2.jpg" />
+    <Content Include="assets\images\face3-160x160-13.jpg" />
     <Content Include="assets\images\face3.jpg" />
+    <Content Include="assets\images\frmarkibrahim-106x160-35.jpg" />
+    <Content Include="assets\images\FrMarkIbrahim.jpg" />
+    <Content Include="assets\images\frmaximushabib-116x160-12.jpg" />
+    <Content Include="assets\images\FrMaximusHabib.jpg" />
+    <Content Include="assets\images\frminaessak-109x160-43.jpg" />
+    <Content Include="assets\images\frminaessak-109x160-46.jpg" />
+    <Content Include="assets\images\frminaessak-109x160-50-109x160-7.jpg" />
+    <Content Include="assets\images\frminaessak-109x160-50.jpg" />
+    <Content Include="assets\images\FrMinaEssak.jpg" />
+    <Content Include="assets\images\image-178x128-34-178x128-28.jpg" />
     <Content Include="assets\images\image-178x128-34.jpg" />
     <Content Include="assets\images\image.jpg" />
     <Content Include="assets\images\jumbotron.jpg" />
@@ -137,9 +154,23 @@
     <Content Include="assets\touchSwipe\jquery.touchSwipe.min.js" />
     <Content Include="assets\viewportChecker\jquery.viewportchecker.js" />
     <Content Include="assets\web\assets\jquery\jquery.min.js" />
+    <Content Include="Board.html" />
     <Content Include="Clergy.html" />
+    <Content Include="ConfessionAppointment.html" />
+    <Content Include="ContactFrMark.html" />
+    <Content Include="ContactFrMax.html" />
+    <Content Include="ContactFrMina.html" />
+    <Content Include="ContactUs.html" />
+    <Content Include="Deacons.html" />
+    <Content Include="Donate.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Liturgies.html" />
+    <Content Include="LiveStreaming.html" />
+    <Content Include="ScheduleHomeVisit.html" />
+    <Content Include="screenshot.png" />
+    <Content Include="SocialCalendar.html" />
+    <Content Include="SundaySchool.html" />
     <Content Include="ValuesController1.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -168,6 +199,7 @@
     <Content Include="assets\socicon\fonts\socicon.ttf" />
     <Content Include="assets\socicon\fonts\socicon.woff" />
     <Content Include="assets\socicon\fonts\socicon.woff2" />
+    <Content Include="project.mobirise" />
     <None Include="Properties\PublishProfiles\StMaryAndPopeKyrillosChurch.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -178,6 +210,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="assets\bootstrap-carousel-swipe\" />
+    <Folder Include="assets\formoid\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
