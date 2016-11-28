@@ -109,6 +109,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Arabic Meeting Schedule.html" />
     <Content Include="assets\animate.css\animate.min.css" />
     <Content Include="assets\bootstrap-material-design-font\css\material.css" />
     <Content Include="assets\bootstrap-material-design-font\fonts\LICENSE.txt" />
