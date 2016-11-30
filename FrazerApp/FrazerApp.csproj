@@ -109,6 +109,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="angular2.html" />
     <Content Include="app\app.component.js" />
     <Content Include="app\app.module.js" />
     <Content Include="app\main.js" />
