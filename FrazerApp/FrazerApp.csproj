@@ -109,6 +109,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.js" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\main.js" />
     <Content Include="Arabic Meeting Schedule.html" />
     <Content Include="assets\animate.css\animate.min.css" />
     <Content Include="assets\bootstrap-material-design-font\css\material.css" />
