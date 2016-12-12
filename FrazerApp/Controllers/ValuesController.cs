@@ -19,19 +19,49 @@ namespace FrazerApp.Controllers
         {
             return Ok(new string[] { "value1", "value2" });
         }
-
-        public IHttpActionResult Post()
+        public class email
+        {
+            public string NAME { get; set; }
+            public string Email { get; set; }
+            public string phone { get; set; }
+            public string message { get; set; } 
+            public string to { get; set; }
+        }
+        public IHttpActionResult Post([FromBody] email email)
         {
             /* MailMessage represents an e-mail that can be sent using stmp server */
             MailMessage my_mail = new MailMessage();
             /* SmtpClient allows applications to send e-mails using SMTP protocol*/
             SmtpClient smtp_client = new SmtpClient();
+
+            var name = string.Empty;
+            if (email.to == "Fr. Mina")
+            {
+                name = "Fr. Mina";
+                email.to = "beshoyhanna@outlook.com";
+            }
+            else if (email.to == "Fr. Mark")
+            {
+                name = "Fr. Mark";
+                email.to = "beshoyhanna@outlook.com";
+
+            }
+            else if (email.to == "Fr. Max")
+            {
+                name = "Fr. Max";
+                email.to = "beshoyhanna@outlook.com";
+            }
+            else
+            {
+                email.to = "stmarypopekyrillos6@gmail.com";
+            }
             try
             {
-                my_mail.From = new MailAddress("stmarypopekyrillos6@gmail.com", "Fraser Church Test");
-                my_mail.To.Add(new MailAddress("rouby_dragdrop@hotmail.com", "Rob"));
-                my_mail.Subject = "Test";
-                my_mail.Body =("This is a Test email from Fraser Church Web app");
+                my_mail.From = new MailAddress("stmarypopekyrillos6@gmail.com", "St. Mary & Pope Kyrillos Church Fraser");
+                my_mail.To.Add(new MailAddress(email.to, name));
+                my_mail.CC.Add(new MailAddress(email.Email,email.NAME));
+                my_mail.Subject = $"Email from: {email.NAME}";
+                my_mail.Body =(email.message);
 
                 /*Setting up STMP server credentials*/
                 smtp_client.Host = "smtp.gmail.com";
