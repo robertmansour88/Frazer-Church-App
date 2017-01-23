@@ -24,38 +24,39 @@ namespace FrazerApp.Controllers
             MailMessage my_mail = new MailMessage();
             /* SmtpClient allows applications to send e-mails using SMTP protocol*/
             SmtpClient smtp_client = new SmtpClient();
-            if (mail.To == "Fr. Mina")
-            {
+
+            var Email = new MailRequest();
 
             var name = string.Empty;
-            if (email.to == "Fr. Mina")
+            if (mail.To == "Fr. Mina")
             {
                 name = "Fr. Mina";
-                email.to = "beshoyhanna@outlook.com";
+                Email.To = "beshoyhanna@outlook.com";
             }
             else if (mail.To == "Fr. Mark")
             {
                 name = "Fr. Mark";
-                email.to = "beshoyhanna@outlook.com";
+                Email.To = "beshoyhanna@outlook.com";
 
             }
             else if (mail.To == "Fr. Max")
             {
                 name = "Fr. Max";
-                email.to = "beshoyhanna@outlook.com";
+                Email.To = "beshoyhanna@outlook.com";
             }
             else
             {
                 mail.To = "stmarypopekyrillos6@gmail.com";
             }
+
             try
             {
                 my_mail.From = new MailAddress("stmarypopekyrillos6@gmail.com", "St. Mary and St. Pope Kyrillos Coptic Orthodox Church");
-                my_mail.To.Add(new MailAddress(mail.To, mail.To));
+                my_mail.To.Add(new MailAddress(Email.To, Email.To));
                 my_mail.Subject = $"Message from {mail.Name}";
                 my_mail.Body = ($@"{mail.Message}
 Thanks, St. Mary and St. Pope Kyrillos Coptic Orthodox Church");
-
+                my_mail.CC.Add(new MailAddress(mail.From));
                 /*Setting up STMP server credentials*/
                 smtp_client.Host = "smtp.gmail.com";
                 smtp_client.Port = 587;
@@ -72,6 +73,7 @@ Thanks, St. Mary and St. Pope Kyrillos Coptic Orthodox Church");
                 Console.ReadLine();
             }
             return Ok(false);
+
         }
 
 

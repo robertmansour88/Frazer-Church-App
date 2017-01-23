@@ -207,6 +207,7 @@
     <Content Include="assets\socicon\fonts\socicon.woff" />
     <Content Include="assets\socicon\fonts\socicon.woff2" />
     <Content Include="project.mobirise" />
+    <Content Include="package.json" />
     <None Include="Properties\PublishProfiles\StMaryAndPopeKyrillosChurch.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -219,6 +220,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="assets\bootstrap-carousel-swipe\" />
     <Folder Include="assets\formoid\" />
+    <Folder Include="node_modules\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
