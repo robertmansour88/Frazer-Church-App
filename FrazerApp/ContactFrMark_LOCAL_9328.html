@@ -15,14 +15,14 @@
   <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
   <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <script src="ValuesController1.js"></script>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
   <link rel="stylesheet" href="assets/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-    <script src="SendEmail.js"></script>
+  
   
   
 </head>
@@ -170,21 +170,21 @@
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-11-name">Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="namebox">
+                                    <label class="form-control-label" for="form1-v-name">Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" id="namebox">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-11-email">Email<span class="form-asterisk">*</span></label>
-                                    <input type="email" class="form-control" name="email" required="" data-form-field="Email" id="frombox">
+                                    <label class="form-control-label" for="form1-v-email">Email<span class="form-asterisk">*</span></label>
+                                    <input type="email" class="form-control" name="email" required="" data-form-field="Email" id="emailbox">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-11-phone">Phone</label>
+                                    <label class="form-control-label" for="form1-v-phone">Phone</label>
                                     <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phonebox">
                                 </div>
                             </div>
@@ -192,11 +192,12 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="form-control-label" for="form1-11-message">Message</label>
+                            <label class="form-control-label" for="form1-v-message">Message</label>
                             <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="messagebox"></textarea>
                         </div>
 
-                        <div><button onclick="SendMail('Fr. Mark')" class="btn btn-success">Send E-mail</button></div>
+                        <div><button onclick="send_email('Fr. Mark')" class="btn btn-success">Send E-mail</button></div>
+
 
                     </form>
                 </div>
