@@ -25,7 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>2.0</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -176,6 +176,7 @@
     <Content Include="SocialCalendar.html" />
     <Content Include="SundaySchool.html" />
     <Content Include="SendEmail.js" />
+    <Content Include="systemjs.config.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -208,6 +209,8 @@
     <Content Include="project.mobirise" />
     <Content Include="package.json" />
     <None Include="Properties\PublishProfiles\StMaryAndPopeKyrillosChurch.pubxml" />
+    <Content Include="tsconfig.json" />
+    <Content Include="typings.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,12 +222,18 @@
     <Folder Include="App_Data\" />
     <Folder Include="assets\bootstrap-carousel-swipe\" />
     <Folder Include="assets\formoid\" />
-    <Folder Include="node_modules\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="typings\browser.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\es6-shim\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\jasmine\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+    <TypeScriptCompile Include="typings\main.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\es6-shim\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\jasmine\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
