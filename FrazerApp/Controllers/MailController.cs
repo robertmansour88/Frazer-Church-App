@@ -31,18 +31,18 @@ namespace FrazerApp.Controllers
             if (mail.To == "Fr. Mina")
             {
                 name = "Fr. Mina";
-                Email.To = "beshoyhanna@outlook.com";
+                Email.To = "abounamina@gmail.com";
             }
             else if (mail.To == "Fr. Mark")
             {
                 name = "Fr. Mark";
-                Email.To = "beshoyhanna@outlook.com";
+                Email.To = "frmarkibrahim@gmail.com";
 
             }
             else if (mail.To == "Fr. Max")
             {
                 name = "Fr. Max";
-                Email.To = "beshoyhanna@outlook.com";
+                Email.To = "Fr.maximus@gmail.com";
             }
             else
             {

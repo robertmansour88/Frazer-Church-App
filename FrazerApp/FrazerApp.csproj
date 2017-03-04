@@ -176,6 +176,7 @@
     <Content Include="SocialCalendar.html" />
     <Content Include="SundaySchool.html" />
     <Content Include="SendEmail.js" />
+    <Content Include="systemjs.config.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -208,6 +209,8 @@
     <Content Include="project.mobirise" />
     <Content Include="package.json" />
     <None Include="Properties\PublishProfiles\StMaryAndPopeKyrillosChurch.pubxml" />
+    <Content Include="tsconfig.json" />
+    <Content Include="typings.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
