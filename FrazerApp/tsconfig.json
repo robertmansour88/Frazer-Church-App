@@ -6,16 +6,10 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "module": "system",
     "noEmitOnError": true,
     "noImplicitAny": true,
     //"outDir": "./app", // where transpiled file will be placed.
-    "removeComments": false,
-    "sourceMap": true,
-    "target": "es5",
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "compileOnSave": true
+    "removeComments": false
   },
   "files": [
     "./app/main.ts",
