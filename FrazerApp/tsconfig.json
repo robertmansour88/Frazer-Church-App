@@ -13,13 +13,11 @@
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "compileOnSave": true
   },
   "files": [
-
-    "greeter.ts",
     "./app/main.ts",
     "./app/app.module.ts",
     "./app/app.component.ts"

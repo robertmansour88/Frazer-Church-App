@@ -38,3 +38,4 @@ C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\bin\System.Web.Http.
 C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\bin\System.Web.Http.WebHost.xml
 C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\obj\Release\FrazerApp.dll
 C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\obj\Release\FrazerApp.pdb
+C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\obj\Release\FrazerApp.csprojResolveAssemblyReference.cache
