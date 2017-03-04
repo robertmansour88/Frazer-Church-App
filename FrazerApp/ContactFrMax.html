@@ -17,11 +17,13 @@
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
+ 
   <link rel="stylesheet" href="assets/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
+
+    <script src="SendEmail.js"></script>
   
   
 </head>
@@ -169,22 +171,22 @@
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-y-name">Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-y-name">
+                                    <label class="form-control-label" for="form1-11-name">Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="namebox">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-y-email">Email<span class="form-asterisk">*</span></label>
-                                    <input type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-y-email">
+                                    <label class="form-control-label" for="form1-11-email">Email<span class="form-asterisk">*</span></label>
+                                    <input type="email" class="form-control" name="email" required="" data-form-field="Email" id="frombox">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-y-phone">Phone</label>
-                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-y-phone">
+                                    <label class="form-control-label" for="form1-11-phone">Phone</label>
+                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phonebox">
                                 </div>
                             </div>
 
@@ -192,10 +194,10 @@
 
                         <div class="form-group">
                             <label class="form-control-label" for="form1-y-message">Message</label>
-                            <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-y-message"></textarea>
+                            <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="messagebox"></textarea>
                         </div>
 
-                        <div><button type="submit" class="btn btn-success">Send E-mail</button></div>
+                        <div><button onclick="SendMail('Fr. Max')" class="btn btn-success">Send E-mail</button></div>
 
                     </form>
                 </div>

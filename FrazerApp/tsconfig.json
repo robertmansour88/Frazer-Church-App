@@ -1,0 +1,27 @@
+﻿{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    //"outDir": "./app", // where transpiled file will be placed.
+    "removeComments": false
+  },
+  "files": [
+    "./app/main.ts",
+    "./app/app.module.ts",
+    "./app/app.component.ts"
+
+  ],
+  "exclude": [
+    "node_modules",
+    "typings",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+
+}

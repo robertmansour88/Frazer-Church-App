@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -24,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -109,6 +111,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="angular2.html" />
+    <Content Include="app\templates\sample.html" />
     <Content Include="Arabic Meeting Schedule.html" />
     <Content Include="assets\animate.css\animate.min.css" />
     <Content Include="assets\bootstrap-material-design-font\css\material.css" />
@@ -171,13 +175,17 @@
     <Content Include="screenshot.png" />
     <Content Include="SocialCalendar.html" />
     <Content Include="SundaySchool.html" />
-    <Content Include="ValuesController1.js" />
-    <Content Include="Web.config" />
+    <Content Include="SendEmail.js" />
+    <Content Include="systemjs.config.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\MailController.cs" />
     <Compile Include="Controllers\WebApiController.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,7 +193,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -200,7 +207,10 @@
     <Content Include="assets\socicon\fonts\socicon.woff" />
     <Content Include="assets\socicon\fonts\socicon.woff2" />
     <Content Include="project.mobirise" />
+    <Content Include="package.json" />
     <None Include="Properties\PublishProfiles\StMaryAndPopeKyrillosChurch.pubxml" />
+    <Content Include="tsconfig.json" />
+    <Content Include="typings.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -213,11 +223,27 @@
     <Folder Include="assets\bootstrap-carousel-swipe\" />
     <Folder Include="assets\formoid\" />
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="typings\browser.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\es6-shim\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\jasmine\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+    <TypeScriptCompile Include="typings\main.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\es6-shim\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\jasmine\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

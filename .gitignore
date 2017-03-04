@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+FrazerApp/FrazerApp.csproj
+.vs/config/applicationhost.config
+FrazerApp/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
