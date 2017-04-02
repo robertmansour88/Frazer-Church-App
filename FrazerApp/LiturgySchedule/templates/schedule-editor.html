@@ -1,0 +1,73 @@
+﻿
+
+<H1>my schedule is: {{ SCHEDULES.LastUpdatedSchedule}}</H1>
+
+<button (click) ="IwantToEditLiturgySchedule()"> {{buttonstate}} 
+    
+    </button>
+
+
+<table *ngIf="view" class="mbr-table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Date
+            </th>
+            <th>
+                Time
+            </th>
+            <th>
+                Serving Priest
+            </th>
+        </tr>
+    </thead>
+    <tr *ngFor="let schedule of SCHEDULES.Schedule">
+        <td>
+            {{ schedule.Date }}
+        </td>
+        <td>
+            {{ schedule.Time }}
+        </td>
+        <td>
+            {{ schedule.ServingPriest}}
+        </td>
+    </tr>
+  
+</table>
+<table *ngIf="!view" class="mbr-table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Date
+            </th>
+            <th>
+                Time
+            </th>
+            <th>
+                Serving Priest
+            </th>
+        </tr>
+    </thead>
+    <tr *ngFor="let schedule of SCHEDULES.Schedule">
+        <td>
+           <input [(ngModel)]="schedule.Date" type="text"/>
+        </td>
+        <td>
+            <input [(ngModel)]="schedule.Time" type="text" />
+        
+        </td>
+        <td>
+            <input [(ngModel)]="schedule.ServingPriest" type="text" />
+           
+        </td>
+    </tr>
+
+</table>
+
+
+
+
+
+
+
+

@@ -21,7 +21,15 @@
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('LiturgySchedule').catch(function (err) { console.error(err); });
+    </script>
 
 
 </head>
@@ -154,90 +162,9 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <hr />
-                    <table class="mbr-table table-striped">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Date
-                                </th>
-                                <th>
-                                    Time
-                                </th>
-                                <th>
-                                    Serving Priest
-                                </th>
-                            </tr>
-                        </thead>
-
-                        <tr>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-sm-6">
-                    <hr />
-                    <table class="mbr-table table-striped">
-                        <caption>
-                            <p>The Liturgy service is held once a month at <a href="index.html">31741 Cyril Ave</a>. Food is served after the liturgy.</p>
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>
-                                    Date
-                                </th>
-                                <th>
-                                    Time
-                                </th>
-                                <th>
-                                    Serving Priest
-                                </th>
-                            </tr>
-                        </thead>
-
-                        <tr>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                            <td>
-                                TBA
-                            </td>
-                        </tr>
-                    </table>
+                    <liturgy-schedule>Loading...</liturgy-schedule>
                 </div>
             </div>
         </div>

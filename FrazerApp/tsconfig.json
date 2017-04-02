@@ -12,9 +12,9 @@
     "removeComments": false
   },
   "files": [
-    "./app/main.ts",
-    "./app/app.module.ts",
-    "./app/app.component.ts"
+    "./LiturgySchedule/main.ts",
+    "./LiturgySchedule/liturgy-schedule.module.ts",
+    "./LiturgySchedule/liturgy-schedule.component.ts"
 
   ],
   "exclude": [

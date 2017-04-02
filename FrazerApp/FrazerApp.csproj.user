@@ -3,7 +3,7 @@
   <PropertyGroup>
     <UseIISExpress>true</UseIISExpress>
     <NameOfLastUsedPublishProfile>StMaryAndPopeKyrillosChurch</NameOfLastUsedPublishProfile>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <ToolsVersionPromptShown>2.0</ToolsVersionPromptShown>
   </PropertyGroup>
   <ProjectExtensions>
