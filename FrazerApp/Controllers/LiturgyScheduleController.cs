@@ -22,9 +22,15 @@ namespace FrazerApp.Controllers
             if (schedule.Password == "StMary&PopeKyrillos2016")
             {
                 schedule.Password = string.Empty;
+                schedule.LastUpdatedSchedule = DateTime.Now.ToString("MMMM dd, yyyy");
                 string path = System.Web.HttpContext.Current.Server.MapPath("/") ;
                 System.IO.File.WriteAllText(path + "\\LiturgySchedule.json", JsonConvert.SerializeObject(schedule));
            //     schedule.Schedules[1].Date = "my_date";
+            }
+            else
+            {
+                return BadRequest("Password is incorrect");
+
             }
             return Ok();
 

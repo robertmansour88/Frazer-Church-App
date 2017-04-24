@@ -36,22 +36,11 @@ var AppComponent = (function () {
     };
     // this method will send a post to end point to update the file (controller), will be called onclick. 
     // the function will take the incoming data (body) from front-end to be communicated back to the controller
-    AppComponent.prototype.IwantToEditLiturgySchedule = function () {
+    AppComponent.prototype.IwantToEditLiturgySchedule = function (myModal) {
         var _this = this;
-        if (this.view) {
-            this.buttonstate = 'save';
-            debugger;
-        }
-        else {
-            this.buttonstate = 'edit';
-            //     var test_schedule: memo = { Schedule: [{ Date: "33/11/2017", Time: "23:00", ServingPriest: "Abouna rrMax" }], LastUpdatedSchedule: "20316", Password: "StMary&PopeKyrillos2016" };
-            // create a post request api/LiturgySchedule/EditLiturgySchedule , SCHEDULES
-            this.http.post('http://localhost:51213/api/LiturgySchedule/EditLiturgySchedule', this.SCHEDULES).subscribe(function (my_error) { return _this.errorMessage = Error; });
-            debugger;
-        }
+        // create a post request api/LiturgySchedule/EditLiturgySchedule , SCHEDULES
+        this.http.post('http://localhost:51213/api/LiturgySchedule/EditLiturgySchedule', this.SCHEDULES).subscribe(function (Noerror) { return myModal.close(); }, function (error) { return _this.errorMessage = "Password is incorrect!"; });
         debugger;
-        this.view = !this.view;
-        alert("I was clicked");
     };
     AppComponent = __decorate([
         core_1.Component({

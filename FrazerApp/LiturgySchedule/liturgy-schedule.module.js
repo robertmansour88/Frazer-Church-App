@@ -12,13 +12,14 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var forms_1 = require('@angular/forms');
+var ng2_modal_1 = require('ng2-modal');
 var liturgy_schedule_component_1 = require('./liturgy-schedule.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule, ng2_modal_1.ModalModule],
             declarations: [liturgy_schedule_component_1.AppComponent],
             bootstrap: [liturgy_schedule_component_1.AppComponent]
         }), 
