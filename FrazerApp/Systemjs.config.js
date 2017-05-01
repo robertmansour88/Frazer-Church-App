@@ -12,6 +12,7 @@
         map: {
             // our app is within the app folder
             app: 'LiturgySchedule',
+            pdf_view: 'PdfView',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
@@ -25,7 +26,9 @@
             // other libraries
             'rxjs': 'npm:rxjs',
             
-            "ng2-modal": 'node_modules/ng2-modal'
+            "ng2-modal": 'node_modules/ng2-modal',
+            "ng2-pdf-viewer": 'node_modules/ng2-pdf-viewer',
+            "pdfjs-dist": 'node_modules/pdfjs-dist'
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
@@ -33,13 +36,26 @@
                 main: './main.js',
                 defaultExtension: 'js'
             },
-           
-            "ng2-modal": {
-        main: './index.js',
-        defaultExtension: 'js'
+            pdf_view: {
+                main: './main.js',
+                defaultExtension:'js'
             },
-            
-    rxjs: {
+
+            "ng2-modal": {
+                main: './index.js',
+                defaultExtension: 'js'
+            },
+
+            "ng2-pdf-viewer": {
+                main: './dist/index.js',
+                defaultExtension: 'js'
+            },
+            "pdfjs-dist": {
+
+                defaultExtension: 'js'
+            },
+
+            rxjs: {
                 defaultExtension: 'js'
             }
         }

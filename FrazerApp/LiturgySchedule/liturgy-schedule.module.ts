@@ -5,9 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { ModalModule } from 'ng2-modal';
 import { AppComponent } from './liturgy-schedule.component';
 
+
 @NgModule({
     imports: [BrowserModule, HttpModule, FormsModule, ModalModule],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

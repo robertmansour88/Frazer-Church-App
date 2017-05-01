@@ -15,9 +15,6 @@ var AppComponent = (function () {
     //  constructor (private my_service: )
     function AppComponent(http) {
         this.http = http;
-        //title: 'Tour of Heroes';
-        //heroes = ['Robert', 'Rafik', 'Amany'];
-        //myHero = this.heroes[0];
         this.SCHEDULES = schedules;
         this.buttonstate = 'edit';
         this.title = 'My church app';

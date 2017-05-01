@@ -21,10 +21,16 @@
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-    <script src="../../node_modules/requirejs/require.js"></script>
-
-    <script src="hello.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/requirejs/require.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('PdfView').catch(function (err) { console.error(err); });
+    </script>
 
 
 </head>
@@ -139,14 +145,18 @@
         </nav>
     </section>
     <section class="engine"><a rel="external" href="https://mobirise.com">top website development software download</a></section><section class="mbr-section mbr-section__container article mbr-after-navbar" id="header3-1d" style="background-color: rgb(255, 255, 255); padding-top: 100px; padding-bottom: 20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h3 class="mbr-section-title display-2">Arabic Meeting Schedule</h3>
-                    <small class="mbr-section-subtitle">The Arabic Meeting is held monthly in St. Mark Church in Troy. Click to download schedule as PDF</small>
-                </div>
-            </div>
-        </div>
+                                                                                                                                     <div class="container">
+                                                                                                                                         <div class="row">
+                                                                                                                                             <div class="col-xs-12">
+                                                                                                                                                 <h3 class="mbr-section-title display-2">Arabic Meeting Schedule</h3>
+                                                                                                                                                 <small class="mbr-section-subtitle">The Arabic Meeting is held monthly in St. Mark Church in Troy. Click to download schedule as PDF</small>
+                                                                                                                                             </div>
+                                                                                                                                             <div class="col-sm-12">
+                                                                                                                                                 <pdf-view>Loading Pdf...</pdf-view>
+                                                                                                                                             </div>
+                                                                                                                                    
+                                                                                                                                         </div>
+                                                                                                                                     </div>
     </section>
     <section class="mbr-section mbr-section-md-padding mbr-footer footer2 mbr-parallax-background" id="contacts2-1b" style="background-image: url(assets/images/jumbotron.jpg); padding-top: 90px; padding-bottom: 90px;">
         <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(124, 112, 107);"></div>

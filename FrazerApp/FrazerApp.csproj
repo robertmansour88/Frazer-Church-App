@@ -233,6 +233,9 @@
     <TypeScriptCompile Include="LiturgySchedule\liturgy-schedule.component.ts" />
     <TypeScriptCompile Include="LiturgySchedule\liturgy-schedule.module.ts" />
     <TypeScriptCompile Include="LiturgySchedule\main.ts" />
+    <TypeScriptCompile Include="PdfView\pdf-view.component.ts" />
+    <TypeScriptCompile Include="PdfView\main.ts" />
+    <TypeScriptCompile Include="PdfView\pdf-view.module.ts" />
     <TypeScriptCompile Include="typings\browser.d.ts" />
     <TypeScriptCompile Include="typings\browser\ambient\es6-shim\index.d.ts" />
     <TypeScriptCompile Include="typings\browser\ambient\jasmine\index.d.ts" />
