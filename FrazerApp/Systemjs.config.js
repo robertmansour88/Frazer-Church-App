@@ -10,9 +10,10 @@
         },
         // map tells the System loader where to look for things
         map: {
-            // our app is within the app folder
+            // our app is variable name for LiturgySchedule folder
             app: 'LiturgySchedule',
             pdf_view: 'PdfView',
+            announcements: 'Announcements',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
@@ -39,6 +40,12 @@
             pdf_view: {
                 main: './main.js',
                 defaultExtension:'js'
+            },
+            announcements: {
+
+                main: './main.js',
+                defaultExtension: 'js'
+
             },
 
             "ng2-modal": {

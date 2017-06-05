@@ -16,7 +16,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FrazerApp</RootNamespace>
     <AssemblyName>FrazerApp</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,6 +83,7 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
@@ -93,8 +95,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
@@ -104,16 +104,17 @@
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="angular2.html" />
+    <Content Include="Announcements\templates\announcements.html" />
     <Content Include="LiturgySchedule\templates\EditLiturgySchedule.html" />
     <Content Include="LiturgySchedule\templates\schedule-editor.html" />
     <Content Include="Arabic Meeting Schedule.html" />
@@ -186,6 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AnnouncementsController.cs" />
     <Compile Include="Controllers\MailController.cs" />
     <Compile Include="Controllers\ValuesController1.cs" />
     <Compile Include="Controllers\LiturgyScheduleController.cs" />
@@ -230,12 +232,16 @@
     <Folder Include="assets\formoid\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Announcements\announcements.component.ts" />
+    <TypeScriptCompile Include="Announcements\announcements.module.ts" />
+    <TypeScriptCompile Include="Announcements\main.ts" />
     <TypeScriptCompile Include="LiturgySchedule\liturgy-schedule.component.ts" />
     <TypeScriptCompile Include="LiturgySchedule\liturgy-schedule.module.ts" />
     <TypeScriptCompile Include="LiturgySchedule\main.ts" />
     <TypeScriptCompile Include="PdfView\pdf-view.component.ts" />
     <TypeScriptCompile Include="PdfView\main.ts" />
     <TypeScriptCompile Include="PdfView\pdf-view.module.ts" />
+    <TypeScriptCompile Include="Services\services.announcements.ts" />
     <TypeScriptCompile Include="typings\browser.d.ts" />
     <TypeScriptCompile Include="typings\browser\ambient\es6-shim\index.d.ts" />
     <TypeScriptCompile Include="typings\browser\ambient\jasmine\index.d.ts" />
