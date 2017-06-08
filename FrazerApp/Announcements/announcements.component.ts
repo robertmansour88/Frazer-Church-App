@@ -6,7 +6,6 @@ import {
     Response
 } from '@angular/http';
 import { FormsModule } from '@angular/forms';
-import { announcements_http_services } from '../Services/services.announcements';
 
 declare var tinymce: any;
 var weekly_announcement: Announcement = { Title: "Title", Body: "Hello" };   
@@ -16,18 +15,14 @@ var weekly_announcement: Announcement = { Title: "Title", Body: "Hello" };
 /* add tinymce: https://www.tinymce.com/  */
 
 @Component({
-    selector: 'my-announcement', 
+    selector: 'announcements', 
     templateUrl: 'Announcements/templates/announcements.html',
 })
 
 export class AppComponent implements OnInit {
 
-    
-    debugger;
-    //constructor (private my_service: )
-    
-    constructor(private my_service: announcements_http_services) { }
-    ngOnInit() { alert(this.my_service.post_data()) }
+    constructor(private http: Http) { }
+    ngOnInit() { }
     //@Output() onEditorKeyup = new EventEmitter<any>();
     my_weekly_announcement = weekly_announcement;
     editor: any;
@@ -36,10 +31,10 @@ export class AppComponent implements OnInit {
     {
         debugger;
         
-        //Http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcement).subscribe(
-        //    No_error => alert("success"),
-        //    error => alert("Failed")
-        //    );
+        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcement).subscribe(
+            No_error => alert("success"),
+            error => alert("Failed")
+            );
 
     
     }

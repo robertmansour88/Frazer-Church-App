@@ -42,10 +42,8 @@
                 defaultExtension:'js'
             },
             announcements: {
-
                 main: './main.js',
                 defaultExtension: 'js'
-
             },
 
             "ng2-modal": {

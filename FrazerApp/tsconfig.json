@@ -14,7 +14,10 @@
   "files": [
     "./LiturgySchedule/main.ts",
     "./LiturgySchedule/liturgy-schedule.module.ts",
-    "./LiturgySchedule/liturgy-schedule.component.ts"
+    "./LiturgySchedule/liturgy-schedule.component.ts",
+    "./Announcements/main.ts",
+    "./announcements/announcements.module.ts",
+    "./announcements/announcements.component.ts"
 
   ],
   "exclude": [

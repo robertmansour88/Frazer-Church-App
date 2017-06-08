@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 var schedules = { Schedules: [{ Date: "3/11/2017", Time: "2:00", ServingPriest: "Abouna Max" }], LastUpdatedSchedule: "2016", Password: "StMary&PopeKyrillos2016" };
 var AppComponent = (function () {
     //  constructor (private my_service: )
@@ -39,15 +39,15 @@ var AppComponent = (function () {
         this.http.post('http://localhost:51213/api/LiturgySchedule/EditLiturgySchedule', this.SCHEDULES).subscribe(function (Noerror) { return myModal.close(); }, function (error) { return _this.errorMessage = "Password is incorrect!"; });
         debugger;
     };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'liturgy-schedule',
-            templateUrl: 'LiturgySchedule/templates/schedule-editor.html',
-        }), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'liturgy-schedule',
+        templateUrl: 'LiturgySchedule/templates/schedule-editor.html',
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], AppComponent);
 exports.AppComponent = AppComponent;
 var Schedule = (function () {
     function Schedule() {

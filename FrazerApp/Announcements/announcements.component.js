@@ -5,23 +5,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var core_1 = require('@angular/core');
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 var weekly_announcement = { Title: "Title", Body: "Hello" };
 /* add tinymce: https://www.tinymce.com/  */
 var AppComponent = (function () {
-    //constructor (private my_service: )
-    function AppComponent(my_service) {
-        this.my_service = my_service;
+    function AppComponent(http) {
+        this.http = http;
         //@Output() onEditorKeyup = new EventEmitter<any>();
         this.my_weekly_announcement = weekly_announcement;
     }
-    AppComponent.prototype.ngOnInit = function () { alert(this.my_service.post_data()); };
+    AppComponent.prototype.ngOnInit = function () { };
     AppComponent.prototype.Submit_Announcement = function () {
         debugger;
-        //Http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcement).subscribe(
-        //    No_error => alert("success"),
-        //    error => alert("Failed")
-        //    );
+        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcement).subscribe(function (No_error) { return alert("success"); }, function (error) { return alert("Failed"); });
     };
     AppComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
@@ -69,14 +69,15 @@ var AppComponent = (function () {
     AppComponent.prototype.ngOnDestroy = function () {
         tinymce.remove(this.editor);
     };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-announcement',
-            templateUrl: 'Announcements/templates/announcements.html',
-        })
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'announcements',
+        templateUrl: 'Announcements/templates/announcements.html',
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], AppComponent);
 exports.AppComponent = AppComponent;
 ;
 var Announcement = (function () {
@@ -86,3 +87,4 @@ var Announcement = (function () {
 }());
 exports.Announcement = Announcement;
 ;
+//# sourceMappingURL=announcements.component.js.map
