@@ -8,20 +8,41 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-var weekly_announcement = { Title: "Title", Body: "Hello" };
+var core_1 = require('@angular/core');
+var http_1 = require('@angular/http');
+var weekly_announcements = { Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };
 /* add tinymce: https://www.tinymce.com/  */
 var AppComponent = (function () {
     function AppComponent(http) {
         this.http = http;
-        //@Output() onEditorKeyup = new EventEmitter<any>();
-        this.my_weekly_announcement = weekly_announcement;
+        this.new_announcement = {
+            Title: "my_title", Body: "my_body", ID: 0
+        };
+        this.my_weekly_announcements = weekly_announcements;
+        this.Edit_announcement = false;
+        this.Current_Announcement = 0;
     }
-    AppComponent.prototype.ngOnInit = function () { };
+    AppComponent.prototype.ngOnInit = function () { this.getAnnouncements(); };
+    // this method reads the JSON file we have locally 
+    AppComponent.prototype.getAnnouncements = function () {
+        var _this = this;
+        debugger;
+        //   this.getSchedule().subscribe(schedule => this.schedules = schedules);
+        this.http.get('Announcements.json').subscribe(function (my_data) { return _this.my_weekly_announcements = my_data.json(); }, function (error) { return _this.errorMessage = error; });
+    };
+    //@Output() onEditorKeyup = new EventEmitter<any>();
+    AppComponent.prototype.Add_announcement = function (Title, Body) {
+        debugger;
+        this.my_weekly_announcements.Announcements[this.my_weekly_announcements.Announcements.length] = { Title: Body, Body: Body, ID: 0 };
+        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(function (No_error) { return alert("success"); }, function (error) { return alert("Failed"); });
+    };
     AppComponent.prototype.Submit_Announcement = function () {
         debugger;
-        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcement).subscribe(function (No_error) { return alert("success"); }, function (error) { return alert("Failed"); });
+        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(function (No_error) { return alert("success"); }, function (error) { return alert("Failed"); });
+    };
+    AppComponent.prototype.edit_announcement_click = function (index) {
+        this.Edit_announcement = this.Edit_announcement == false ? true : false;
+        this.Current_Announcement = index;
     };
     AppComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
@@ -61,7 +82,8 @@ var AppComponent = (function () {
                 debugger;
                 _this.editor = editor;
                 editor.on('change', function () {
-                    _this.my_weekly_announcement.Body = editor.getContent();
+                    var content = editor.getContent();
+                    _this.my_weekly_announcements.Announcements[_this.Current_Announcement].Body = content;
                 });
             },
         });
@@ -69,17 +91,23 @@ var AppComponent = (function () {
     AppComponent.prototype.ngOnDestroy = function () {
         tinymce.remove(this.editor);
     };
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'announcements',
+            templateUrl: 'Announcements/templates/announcements.html',
+        }), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'announcements',
-        templateUrl: 'Announcements/templates/announcements.html',
-    }),
-    __metadata("design:paramtypes", [http_1.Http])
-], AppComponent);
 exports.AppComponent = AppComponent;
 ;
+var List_Of_Announcements = (function () {
+    function List_Of_Announcements() {
+    }
+    return List_Of_Announcements;
+}());
+exports.List_Of_Announcements = List_Of_Announcements;
 var Announcement = (function () {
     function Announcement() {
     }

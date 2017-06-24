@@ -216,6 +216,7 @@
     <Content Include="package.json" />
     <Content Include="LiturgySchedule.json" />
     <Content Include="packages.config" />
+    <Content Include="announcements.json" />
     <None Include="Properties\PublishProfiles\StMaryAndPopeKyrillosChurch.pubxml" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />

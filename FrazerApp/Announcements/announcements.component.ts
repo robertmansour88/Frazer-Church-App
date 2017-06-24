@@ -8,7 +8,7 @@ import {
 import { FormsModule } from '@angular/forms';
 
 declare var tinymce: any;
-var weekly_announcement: Announcement = { Title: "Title", Body: "Hello" };   
+var weekly_announcements: List_Of_Announcements = { Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };   
 
 
 
@@ -20,23 +20,58 @@ var weekly_announcement: Announcement = { Title: "Title", Body: "Hello" };
 })
 
 export class AppComponent implements OnInit {
-
-    constructor(private http: Http) { }
-    ngOnInit() { }
-    //@Output() onEditorKeyup = new EventEmitter<any>();
-    my_weekly_announcement = weekly_announcement;
+    new_announcement: Announcement =
+    {
+        Title: "my_title", Body: "my_body", ID: 0
+    }
+    my_weekly_announcements = weekly_announcements;
+    errorMessage: string;
     editor: any;
     document: any;
+    Edit_announcement = false;
+    Current_Announcement = 0;
+    constructor(private http: Http) { }
+    ngOnInit() { this.getAnnouncements();}
+
+    
+    // this method reads the JSON file we have locally 
+    getAnnouncements() {
+        debugger;
+        //   this.getSchedule().subscribe(schedule => this.schedules = schedules);
+        this.http.get('Announcements.json').subscribe(
+            my_data => this.my_weekly_announcements = my_data.json() as List_Of_Announcements,
+            error => this.errorMessage = <any>error
+        );
+    }
+    //@Output() onEditorKeyup = new EventEmitter<any>();
+
+
+    Add_announcement(Title: string, Body: string )
+    {
+        debugger;
+        this.my_weekly_announcements.Announcements[this.my_weekly_announcements.Announcements.length] = { Title: Body, Body: Body ,ID: 0 }
+        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(
+            No_error => alert("success"),
+            error => alert("Failed")
+        );
+
+    }
     Submit_Announcement()
     {
         debugger;
         
-        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcement).subscribe(
+        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(
             No_error => alert("success"),
             error => alert("Failed")
             );
 
     
+    }
+
+    edit_announcement_click(index:number)
+    {
+        this.Edit_announcement = this.Edit_announcement == false ? true : false
+        this.Current_Announcement = index;
     }
 
     ngAfterViewInit() {
@@ -81,7 +116,8 @@ export class AppComponent implements OnInit {
                 debugger;
                 this.editor = editor;
                 editor.on('change', () => {
-                    this.my_weekly_announcement.Body = editor.getContent();
+                    const content = editor.getContent();
+                    this.my_weekly_announcements.Announcements[this.Current_Announcement].Body = content;
                 });
             },
         });
@@ -91,8 +127,13 @@ export class AppComponent implements OnInit {
         tinymce.remove(this.editor);
     }
 };
+export class List_Of_Announcements {
 
+    Announcements: Announcement[];
+
+}
 export class Announcement {
+    ID: number;
     Title: string;
     Body: string;
 

@@ -39,3 +39,43 @@ C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\bin\System.Web.Http.
 C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\obj\Release\FrazerApp.dll
 C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\obj\Release\FrazerApp.pdb
 C:\Users\besho\Documents\GitHub\Frazer-Church-App\FrazerApp\obj\Release\FrazerApp.csprojResolveAssemblyReference.cache
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\ApplicationInsights.config
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\csc.exe
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\vbc.exe
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\FrazerApp.dll.config
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\FrazerApp.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\FrazerApp.pdb
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.Web.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Newtonsoft.Json.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\System.Web.Http.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.Web.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\Newtonsoft.Json.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\System.Web.Http.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\obj\Release\FrazerApp.dll
+C:\Users\Arabi Meeting\documents\visual studio 2015\Projects\FrazerApp\FrazerApp\obj\Release\FrazerApp.pdb

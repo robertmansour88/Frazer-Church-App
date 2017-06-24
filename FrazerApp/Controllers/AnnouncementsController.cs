@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace FrazerApp.Controllers
 {
@@ -20,8 +21,15 @@ namespace FrazerApp.Controllers
         // POST api/<controller>
         [HttpPost]
         [ActionName ("Submit_Announcement")]
-        public IHttpActionResult Submit_Announcement ([FromBody]string title, string body)
+        public IHttpActionResult Submit_Announcement ([FromBody]List_Of_Announcements my_announcements)
         {
+            for (int i =0; i< my_announcements.Announcements.Count; i++)
+            {
+                my_announcements.Announcements[i].ID = i;
+            }
+
+            string path = System.Web.HttpContext.Current.Server.MapPath("/");
+            System.IO.File.WriteAllText(path + "\\Announcements.json", JsonConvert.SerializeObject(my_announcements));
             return Ok();
         }
 
@@ -35,4 +43,21 @@ namespace FrazerApp.Controllers
         {
         }
     }
+}
+
+
+
+
+public class List_Of_Announcements
+{
+
+    public List<Announcement> Announcements {get; set; }
+}
+
+public class Announcement
+{
+    public string Title { get; set; }
+    public string Body { get; set; }
+    public int ID { get; set;}
+
 }
