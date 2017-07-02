@@ -11,15 +11,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FrazerApp.Controllers
 {
-
+    [Route("api/Mail")]
     public class MailController : Controller
     {
 
-        [HttpPost]
-        [ActionName("SendEmail")]
-        public IActionResult SendEmail(MailRequest mail)
+        [HttpPost("SendEmail")]
+        public string SendEmail(MailRequest mail)
         {
-            if (mail.Message == null) return BadRequest("empty message");
+            if (mail.Message == null) return "empty message";
             /* MailMessage represents an e-mail that can be sent using stmp server */
             MimeMessage my_mail = new MimeMessage();
             /* SmtpClient allows applications to send e-mails using SMTP protocol*/
@@ -51,18 +50,18 @@ namespace FrazerApp.Controllers
 
             try
             {
-                my_mail.From.Add(new MailboxAddress("stmarypopekyrillos6@gmail.com", "St. Mary and St. Pope Kyrillos Coptic Orthodox Church"));
-                my_mail.To.Add(new MailboxAddress(Email.To, Email.To));
+                my_mail.From.Add(new MailboxAddress("St. Mary and St. Pope Kyrillos Coptic Orthodox Church", "stmarypopekyrillos6@gmail.com"));
+                my_mail.To.Add(new MailboxAddress(name, Email.To));
                 my_mail.Subject = $"Message from {mail.Name}";
                 my_mail.Body = new TextPart ($@"{mail.Message}
 Thanks, St. Mary and St. Pope Kyrillos Coptic Orthodox Church");
-                my_mail.Cc.Add(new MailboxAddress(mail.From));
+                my_mail.Cc.Add(new MailboxAddress(mail.Name,mail.From));
                 /*Setting up STMP server credentials*/
                 smtp_client.Connect("smtp.gmail.com", 587);
                 smtp_client.Authenticate(new System.Net.NetworkCredential("stmarypopekyrillos6@gmail.com", "stmaryk2016"));
                 smtp_client.Send(my_mail);
                 //Console.ReadLine();
-                return Ok(true);
+                return "Ok";
             }
             catch (Exception ex)
             {
@@ -70,7 +69,7 @@ Thanks, St. Mary and St. Pope Kyrillos Coptic Orthodox Church");
                 Console.WriteLine(ex.Message);
                 Console.ReadLine();
             }
-            return Ok(false);
+            return "Error";
 
         }
 

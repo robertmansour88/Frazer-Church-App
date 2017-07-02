@@ -11,23 +11,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var weekly_announcements = { Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };
-/* add tinymce: https://www.tinymce.com/  */
 var AppComponent = (function () {
     function AppComponent(http) {
         this.http = http;
         this.new_announcement = {
-            Title: "my_title", Body: "my_body", ID: 0
+            Title: "title", Body: "message", ID: 0
         };
         this.my_weekly_announcements = weekly_announcements;
         this.Edit_announcement = false;
-        this.Current_Announcement = this.my_weekly_announcements.Announcements[0];
+        this.Current_Announcement = this.new_announcement;
     }
     AppComponent.prototype.ngOnInit = function () { this.getAnnouncements(); };
-    // this method reads the JSON file we have locally 
     AppComponent.prototype.getAnnouncements = function () {
         var _this = this;
         debugger;
-        //   this.getSchedule().subscribe(schedule => this.schedules = schedules);
         this.http.get('announcements.json').subscribe(function (my_data) { return _this.my_weekly_announcements = my_data.json(); }, function (error) { return _this.errorMessage = error; });
     };
     //@Output() onEditorKeyup = new EventEmitter<any>();

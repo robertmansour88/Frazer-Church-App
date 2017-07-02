@@ -1,13 +1,13 @@
 function SendMail(to) {
 
-    var data = JSON.stringify({
-        "To": to,
-        "From": document.getElementById("frombox").value,
-        "Phone": document.getElementById("phonebox").value,
-        "Name": document.getElementById("namebox").value,
-        "Message": document.getElementById("messagebox").value
-    });
+    var data = new FormData();
+    data.append('To', to);
+    data.append('From', document.getElementById("frombox").value);
+    data.append('Phone', document.getElementById("phonebox").value);
+    data.append('Name', document.getElementById("namebox").value);
+    data.append('Message', document.getElementById("messagebox").value);
 
+    debugger;
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 
@@ -17,10 +17,6 @@ function SendMail(to) {
         }
     });
 
-    xhr.open("POST", "http://localhost:51213/api/Mail/SendEmail");
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.setRequestHeader("cache-control", "no-cache");
-    xhr.setRequestHeader("postman-token", "37abfcfd-e922-8e07-9c27-b79b7ede274a");
-
+    xhr.open("POST", "/api/Mail/SendEmail");
     xhr.send(data);
 }

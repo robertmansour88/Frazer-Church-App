@@ -12,8 +12,6 @@ var weekly_announcements: List_Of_Announcements = { Announcements: [{ Title: "Ti
 
 
 
-/* add tinymce: https://www.tinymce.com/  */
-
 @Component({
     selector: 'announcements', 
     templateUrl: 'Announcements/templates/announcements.html',
@@ -22,22 +20,20 @@ var weekly_announcements: List_Of_Announcements = { Announcements: [{ Title: "Ti
 export class AppComponent implements OnInit {
     new_announcement: Announcement =
     {
-        Title: "my_title", Body: "my_body", ID: 0
+        Title: "title", Body: "message", ID: 0
     }
     my_weekly_announcements = weekly_announcements;
     errorMessage: string;
     editor: any;
     document: any;
     Edit_announcement = false;
-    Current_Announcement: Announcement = this.my_weekly_announcements.Announcements[0];
+    Current_Announcement = this.new_announcement;
     constructor(private http: Http) { }
     ngOnInit() { this.getAnnouncements();}
 
     
-    // this method reads the JSON file we have locally 
     getAnnouncements() {
         debugger;
-        //   this.getSchedule().subscribe(schedule => this.schedules = schedules);
         this.http.get('announcements.json').subscribe(
             my_data => this.my_weekly_announcements = my_data.json() as List_Of_Announcements,
             error => this.errorMessage = <any>error
@@ -64,8 +60,6 @@ export class AppComponent implements OnInit {
             No_error => alert("success"),
             error => alert("Failed")
             );
-
-    
     }
 
     editannouncement(index:string)
