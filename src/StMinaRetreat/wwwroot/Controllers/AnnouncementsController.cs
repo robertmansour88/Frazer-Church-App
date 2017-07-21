@@ -12,13 +12,20 @@ namespace FrazerApp.Controllers
         [HttpPost("Submit_Announcement")]
         public string Submit_Announcement([FromBody]List_Of_Announcements my_announcements)
         {
-            for (int i = 0; i < my_announcements.Announcements.Count; i++)
+            if (my_announcements.Password)
             {
-                my_announcements.Announcements[i].Id = i;
+                for (int i = 0; i < my_announcements.Announcements.Count; i++)
+                {
+                    my_announcements.Announcements[i].Id = i;
+                }
+                System.IO.File.Delete("wwwroot/announcements.json");
+                System.IO.File.WriteAllText("wwwroot/announcements.json", JsonConvert.SerializeObject(my_announcements));
+                return "Okay";
             }
-            System.IO.File.Delete("wwwroot/announcements.json");
-            System.IO.File.WriteAllText("wwwroot/announcements.json", JsonConvert.SerializeObject(my_announcements));
-            return "Okay";
+            else
+            {
+                return "Unauthorized";
+            }
         }
     }
 }
@@ -28,7 +35,7 @@ namespace FrazerApp.Controllers
 
 public class List_Of_Announcements
 {
-
+    public string Password { get; set; }
     public List<Announcement> Announcements { get; set; }
 }
 

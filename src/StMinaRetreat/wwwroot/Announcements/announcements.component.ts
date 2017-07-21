@@ -8,7 +8,7 @@ import {
 import { FormsModule } from '@angular/forms';
 
 declare var tinymce: any;
-var weekly_announcements: List_Of_Announcements = { Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };   
+var weekly_announcements: List_Of_Announcements = { Password:"", Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };   
 
 
 
@@ -122,7 +122,7 @@ export class AppComponent implements OnInit {
     }
 };
 export class List_Of_Announcements {
-
+    Password: string;
     Announcements: Announcement[];
 
 }
