@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var weekly_announcements = { Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };
+var weekly_announcements = { Password: "", Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };
 var AppComponent = (function () {
     function AppComponent(http) {
         this.http = http;
@@ -31,10 +31,12 @@ var AppComponent = (function () {
     AppComponent.prototype.Add_announcement = function (Title, Body) {
         debugger;
         this.my_weekly_announcements.Announcements[this.my_weekly_announcements.Announcements.length] = { Title: Body, Body: Body, ID: 0 };
+        this.my_weekly_announcements.Password = this.Password;
         this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(function (No_error) { return alert("success"); }, function (error) { return alert("Failed"); });
     };
     AppComponent.prototype.Submit_Announcement = function () {
         debugger;
+        this.my_weekly_announcements.Password = this.Password;
         this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(function (No_error) { return alert("success"); }, function (error) { return alert("Failed"); });
     };
     AppComponent.prototype.editannouncement = function (index) {

@@ -21,7 +21,8 @@ export class AppComponent implements OnInit {
     new_announcement: Announcement =
     {
         Title: "title", Body: "message", ID: 0
-    }
+    };
+    Password: string;
     my_weekly_announcements = weekly_announcements;
     errorMessage: string;
     editor: any;
@@ -45,7 +46,8 @@ export class AppComponent implements OnInit {
     Add_announcement(Title: string, Body: string )
     {
         debugger;
-        this.my_weekly_announcements.Announcements[this.my_weekly_announcements.Announcements.length] = { Title: Body, Body: Body ,ID: 0 }
+        this.my_weekly_announcements.Announcements[this.my_weekly_announcements.Announcements.length] = { Title: Body, Body: Body, ID: 0 };
+        this.my_weekly_announcements.Password = this.Password;
         this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(
             No_error => alert("success"),
             error => alert("Failed")
@@ -55,7 +57,7 @@ export class AppComponent implements OnInit {
     Submit_Announcement()
     {
         debugger;
-        
+        this.my_weekly_announcements.Password = this.Password;
         this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(
             No_error => alert("success"),
             error => alert("Failed")
@@ -64,7 +66,7 @@ export class AppComponent implements OnInit {
 
     editannouncement(index:string)
     {
-        this.Edit_announcement = this.Edit_announcement == false ? true : false
+        this.Edit_announcement = this.Edit_announcement == false ? true : false;
         this.Current_Announcement = this.my_weekly_announcements.Announcements[parseInt(index)];
     }
 

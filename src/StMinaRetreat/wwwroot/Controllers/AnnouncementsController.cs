@@ -12,12 +12,13 @@ namespace FrazerApp.Controllers
         [HttpPost("Submit_Announcement")]
         public string Submit_Announcement([FromBody]List_Of_Announcements my_announcements)
         {
-            if (my_announcements.Password)
+            if (my_announcements.Password == "StMary&PopeKyrillos2016")
             {
                 for (int i = 0; i < my_announcements.Announcements.Count; i++)
                 {
                     my_announcements.Announcements[i].Id = i;
                 }
+                my_announcements.Password = "";
                 System.IO.File.Delete("wwwroot/announcements.json");
                 System.IO.File.WriteAllText("wwwroot/announcements.json", JsonConvert.SerializeObject(my_announcements));
                 return "Okay";
