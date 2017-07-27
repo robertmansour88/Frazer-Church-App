@@ -1,0 +1,27 @@
+﻿
+<div class="col-lg-12">
+    <button (click)="add_announcement=true">Add New Announcement</button>
+    <div *ngIf="add_announcement==true">
+        <label>Title</label>
+        <input class="btn btn-default" [(ngModel)]="new_announcement.Title" class="form-control" type="text" />
+        <label>Content</label>
+        <input [(ngModel)]="new_announcement.Body" />
+        <input type="text" class="form-control" [(ngModel)]="Password" /><button class="btn btn-default" (click)="Add_announcement(new_announcement.Title, new_announcement.Body)">Submit</button>
+    </div>
+    <div [hidden]="Edit_announcement==false">
+        <label>Title</label>
+        <input [(ngModel)]="Current_Announcement.Title" class="form-control" type="text" />
+        <label>Content</label>
+        <textarea>{{Current_Announcement.Body}}</textarea>
+        <input type="text" class="form-control" [(ngModel)]="Password"/><button class="btn btn-default" (click)="Submit_Announcement()">Submit</button>
+    </div>
+    <div class="list-group">
+        <div *ngFor="let single_announcement of my_weekly_announcements.Announcements" class="list-group-item" style="overflow:hidden;  position:relative;">
+            <button class="btn btn-default" (click)="editannouncement(single_announcement.Id)">Edit</button>
+            <h3 class="list-group-item-heading">{{single_announcement.Title}} </h3>
+            <div [innerHTML]="single_announcement.Body" class="list-group-item-text"></div>
+        </div>
+    </div>
+
+
+</div>
