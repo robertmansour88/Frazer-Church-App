@@ -1,14 +1,13 @@
 ﻿{
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": true,
-    "compileOnSave": true
+    "noImplicitAny": true
   },
   "files": [
     "./LiturgySchedule/main.ts",
@@ -16,8 +15,10 @@
     "./LiturgySchedule/liturgy-schedule.component.ts",
     "./Announcements/main.ts",
     "./announcements/announcements.module.ts",
-    "./announcements/announcements.component.ts"
-
+    "./announcements/announcements.component.ts",
+    "./SundaySchool/main.ts",
+    "./SundaySchool/announcements.module.ts",
+    "./SundaySchool/announcements.component.ts"
   ],
   "exclude": [
     "node_modules",
@@ -26,3 +27,6 @@
     "typings/main.d.ts"
   ]
 }
+
+
+ 

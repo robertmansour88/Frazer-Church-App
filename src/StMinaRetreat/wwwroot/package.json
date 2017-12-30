@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@angular/common": "^5.0.2",
+    "@angular/compiler": "^5.0.2",
+    "@angular/core": "^5.0.2",
+    "@angular/forms": "^5.0.2",
+    "@angular/http": "^5.0.2",
+    "@angular/platform-browser": "^5.0.2",
+    "@angular/platform-browser-dynamic": "^5.0.2",
+    "@angular/router": "^5.0.2",
+    "@angular/upgrade": "^5.0.2",
+    "core-js": "^2.5.1",
+    "es5-shim": "^4.5.9",
+    "es6-shim": "^0.35.3",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.13.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "~5.5.2",
+    "systemjs": "0.19.46",
+    "zone.js": "^0.8.18"
+  },
+  "description": "Marketing Admin Site",
+  "devDependencies": {
+    "@types/core-js": "^0.9.43",
+    "typescript": "^2.6.2"
+  },
+  "license": "UNLICENCED",
+  "name": "michfirst-admin",
+  "repository": "Michigan First TFS Server",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "version": "1.0.0"
+}

@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
 var weekly_announcements = { Password: "", Announcements: [{ Title: "Title", Body: "Hello", ID: 0 }] };
@@ -24,19 +25,19 @@ let AppComponent = class AppComponent {
     ngOnInit() { this.getAnnouncements(); }
     getAnnouncements() {
         debugger;
-        this.http.get('announcements.json').subscribe(my_data => this.my_weekly_announcements = my_data.json(), error => this.errorMessage = error);
+        this.http.get('sundayschool.json').subscribe(my_data => this.my_weekly_announcements = my_data.json(), error => this.errorMessage = error);
     }
     //@Output() onEditorKeyup = new EventEmitter<any>();
     Add_announcement(Title, Body) {
         debugger;
         this.my_weekly_announcements.Announcements[this.my_weekly_announcements.Announcements.length] = { Title: Body, Body: Body, ID: 0 };
         this.my_weekly_announcements.Password = this.Password;
-        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(No_error => alert("success"), error => alert("Failed"));
+        this.http.post('/api/Announcements/Submit_Announcement2', this.my_weekly_announcements).subscribe(No_error => alert("success"), error => alert("Failed"));
     }
     Submit_Announcement() {
         debugger;
         this.my_weekly_announcements.Password = this.Password;
-        this.http.post('/api/Announcements/Submit_Announcement', this.my_weekly_announcements).subscribe(No_error => alert("success"), error => alert("Failed"));
+        this.http.post('/api/Announcements/Submit_Announcement2', this.my_weekly_announcements).subscribe(No_error => alert("success"), error => alert("Failed"));
     }
     editannouncement(index) {
         this.Edit_announcement = this.Edit_announcement == false ? true : false;
@@ -91,8 +92,8 @@ let AppComponent = class AppComponent {
 };
 AppComponent = __decorate([
     core_1.Component({
-        selector: 'announcements',
-        templateUrl: 'Announcements/templates/announcements.html',
+        selector: 'sundayschool',
+        templateUrl: 'SundaySchool/templates/announcements.html',
     }),
     __metadata("design:paramtypes", [http_1.Http])
 ], AppComponent);

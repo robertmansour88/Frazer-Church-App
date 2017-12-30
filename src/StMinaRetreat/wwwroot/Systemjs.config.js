@@ -14,6 +14,7 @@
             app: 'LiturgySchedule',
             pdf_view: 'PdfView',
             announcements: 'Announcements',
+            sundayschool: 'SundaySchool',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
@@ -40,6 +41,10 @@
                 defaultExtension:'js'
             },
             announcements: {
+                main: './main.js',
+                defaultExtension: 'js'
+            },
+            sundayschool: {
                 main: './main.js',
                 defaultExtension: 'js'
             },

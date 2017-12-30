@@ -28,10 +28,37 @@ namespace FrazerApp.Controllers
                 return "Unauthorized";
             }
         }
-    }
+
+
+		// POST api/<controller>
+		[HttpPost("Submit_Announcement2")]
+		public string Submit_Announcement2([FromBody]List_Of_Announcements my_announcements)
+		{
+			if (my_announcements.Password == "StMary&PopeKyrillos2016")
+			{
+				for (int i = 0; i < my_announcements.Announcements.Count; i++)
+				{
+					my_announcements.Announcements[i].Id = i;
+				}
+				my_announcements.Password = "";
+				System.IO.File.Delete("wwwroot/sundayschool.json");
+				System.IO.File.WriteAllText("wwwroot/sundayschool.json", JsonConvert.SerializeObject(my_announcements));
+				return "Okay";
+			}
+			else
+			{
+				return "Unauthorized";
+			}
+		}
+	}
 }
 
+public class EmailListSubscribers
+{
+	public string[] SundaySchoolSubscribers = new string[100];
 
+	public string[] AnnoucementSubscribers = new string[100];
+}
 
 
 public class List_Of_Announcements

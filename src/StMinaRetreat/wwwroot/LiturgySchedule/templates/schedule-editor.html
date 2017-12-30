@@ -22,7 +22,7 @@
         </p>
         <p>
             <label for="password">Password</label>
-            <input #textbox type="text" name="password" [(ngModel)]="SCHEDULES.Password" required />
+            <input type="text" name="password" [(ngModel)]="SCHEDULES.Password" required />
         </p>
         <table class="mbr-table table-striped">
             <thead>
@@ -55,8 +55,7 @@
         </table>
 
 
-        <button (click)="myModal.close()">Close</button>
-        <button type="submit" (click)="IwantToEditLiturgySchedule(myModal)" (onSubmit)="myModal.close()">Submit</button>
+        <button class="btn btn-success" type="submit" (click)="IwantToEditLiturgySchedule(myModal)" (onSubmit)="myModal.close()">Submit</button>
     </div>
 </div>
 <div *ngIf="!view">
